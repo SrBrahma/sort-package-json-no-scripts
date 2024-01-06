@@ -1,7 +1,9 @@
 # sort-package-json-no-scripts
 
 # Fork of [sort-package-json](https://github.com/keithamus/sort-package-json) that won't sort the scripts.
-# To use it, add this to "overrides" (npm, bun, pnpm) or "resolutions" (yarn) to your `package.json` and run your package manager install command (e.g. `npm install`).
+
+## When being used with [eslint-plugin-json-files](https://github.com/kellyselden/eslint-plugin-json-files):
+- Add this to "overrides" (npm, bun, pnpm) or "resolutions" (yarn) to your `package.json` and run your package manager install command (e.g. `npm install`).
 
 ```
 {
