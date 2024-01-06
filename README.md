@@ -1,4 +1,18 @@
-# Sort Package.json
+# sort-package-json-no-scripts
+
+# Fork of [sort-package-json](https://github.com/keithamus/sort-package-json) that won't sort the scripts.
+# To use it, add this to "overrides" (npm, bun, pnpm) or "resolutions" (yarn) to your `package.json` and run your package manager install command (e.g. `npm install`).
+
+```
+{
+  "overrides": {
+    "sort-package-json": "sort-package-json-no-scripts"
+  }
+}
+```
+
+## Original README below
+---
 
 [![Build Status][github_actions_badge]][github_actions_link]
 [![NPM Version][package_version_badge]][package_link]
