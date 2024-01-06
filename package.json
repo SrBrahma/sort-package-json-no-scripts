@@ -1,6 +1,6 @@
 {
   "name": "sort-package-json-no-scripts",
-  "version": "1.0.0",
+  "version": "1.0.3",
   "description": "Sort an Object or package.json based on the well-known package.json keys",
   "keywords": [
     "keys",
@@ -11,14 +11,13 @@
   "license": "MIT",
   "author": "Fork by SrBrahma, Original: Keith Cirkel <npm@keithcirkel.co.uk> (http://keithcirkel.co.uk/)",
   "type": "module",
-  "exports": "./index.js",
+  "main": "dist/index.js",
+  "exports": "./dist/index.js",
   "types": "index.d.ts",
-  "bin": "cli.js",
+  "bin": "dist/cli.js",
   "files": [
-    "index.js",
-    "index.d.ts",
-    "cli.js",
-    "reporter.js"
+    "dist/*",
+    "index.d.ts"
   ],
   "scripts": {
     "fix": "eslint . --fix && prettier . \"!**/*.js\" --write && node cli.js \"package.json\"",
@@ -27,7 +26,9 @@
     "semantic-release": "semantic-release",
     "test": "ava && dtslint --localTs node_modules/typescript/lib",
     "test-coverage": "nyc ava",
-    "update-snapshots": "ava --update-snapshots"
+    "update-snapshots": "ava --update-snapshots",
+    "renameJsToCjs": "find dist -name \"*.js\" -exec sh -c 'mv \"$0\" \"${0%.js}.cjs\"' {} \\;",
+    "build": "tsc && npm run renameJsToCjs"
   },
   "commitlint": {
     "extends": [

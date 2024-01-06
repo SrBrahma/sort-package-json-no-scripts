@@ -6,11 +6,14 @@
     "noImplicitThis": true,
     "strictNullChecks": true,
     "strictFunctionTypes": true,
-    "noEmit": true,
 
     // If the library is an external module (uses `export`), this allows your test file to import "mylib" instead of "./index".
     // If the library is global (cannot be imported via `import` or `require`), leave this out.
     "baseUrl": ".",
-    "paths": { "sort-package-json": ["."] }
-  }
+    "paths": { "sort-package-json": ["."] },
+    "outDir": "dist",
+    "allowJs": true
+  },
+
+  "include": ["cli.js", "index.js", "reporter.js"]
 }
