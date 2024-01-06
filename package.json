@@ -1,22 +1,15 @@
 {
-  "name": "sort-package-json",
-  "version": "0.0.0-development",
+  "name": "sort-package-json-no-scripts",
+  "version": "1.0.0",
   "description": "Sort an Object or package.json based on the well-known package.json keys",
   "keywords": [
     "keys",
     "object",
     "sort"
   ],
-  "homepage": "https://github.com/keithamus/sort-package-json#readme",
-  "bugs": {
-    "url": "https://github.com/keithamus/sort-package-json/issues"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+ssh://git@github.com/keithamus/sort-package-json.git"
-  },
+  "homepage": "https://github.com/SrBrahma/sort-package-json-no-scripts#readme",
   "license": "MIT",
-  "author": "Keith Cirkel <npm@keithcirkel.co.uk> (http://keithcirkel.co.uk/)",
+  "author": "Fork by SrBrahma, Original: Keith Cirkel <npm@keithcirkel.co.uk> (http://keithcirkel.co.uk/)",
   "type": "module",
   "exports": "./index.js",
   "types": "index.d.ts",
